@@ -1,7 +1,6 @@
 import React from 'react';
 import { useEffect } from 'react';
 import { useState } from 'react';
-import AddService from '../../admin/addservice/AddService';
 import ServiceDetails from '../servicedeetails/ServiceDetails';
 
 const Services = () => {

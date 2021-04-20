@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import CaseStudyDetails from '../casstudydetails/CaseStudyDetails';
 
 const CaseStudy = () => {
-    const [casestudy, setCasestudy] = useState([]);
     const caseStudyData = [
         {
             image: "https://img.freepik.com/free-vector/web-development-programmer-engineering-coding-website-augmented-reality-interface-screens-developer-project-engineer-programming-software-application-design-cartoon-illustration_107791-3863.jpg?size=626&ext=jpg",

@@ -1,17 +1,13 @@
-import { faTheaterMasks } from "@fortawesome/free-solid-svg-icons";
 import React, { createContext, useState } from "react";
 import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
 } from "react-router-dom";
 import AddService from "./componetns/admin/addservice/AddService";
 import Login from "./componetns/admin/login/Login";
 import Home from "./componetns/home/home/Home";
 import Review from "./componetns/dasbord/review/Review";
-import DetailsProject from "./componetns/order/orderlist/OrderList";
-import Order from "./componetns/order/order/Order";
 import PrivetRoute from "./componetns/privetroute/PrivetRoute";
 import OrderList from "./componetns/order/orderlist/OrderList";
 import CheakOutOrder from "./componetns/dasbord/cheakoutorder/CheakOutOrder";
@@ -29,6 +25,9 @@ function App() {
     <UserContext.Provider value={[loggedInUser, setLoggedInUser]}>
       <Router>
         <Switch>
+          <Route path="/home">
+            <Home></Home>
+          </Route>
           <Route exact path="/">
             <Home></Home>
           </Route>

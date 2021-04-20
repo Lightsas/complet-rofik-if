@@ -1,7 +1,5 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
-import { useContext } from 'react/cjs/react.development';
-import { UserContext } from '../../../App';
 import Navbar from '../../sharecomponet/navbar/Navbar';
 import SideBar from '../sidebar/SideBar';
 

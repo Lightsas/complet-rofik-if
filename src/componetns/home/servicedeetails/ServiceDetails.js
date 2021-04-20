@@ -1,11 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { useContext, useState } from 'react/cjs/react.development';
+import { useContext} from 'react/cjs/react.development';
 import { UserContext } from '../../../App';
 import './ServiceDetails.css'
 
 const ServiceDetails = (props) => {
-    const [service, setService] = useState([]);
     const [loggedInUser, setLoggedInUser] = useContext(UserContext);
     const {imageURL, name, description, id} = props.service;
     const handleOrder = () => {
